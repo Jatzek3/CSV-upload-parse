@@ -1,5 +1,6 @@
 from flask import Flask,request
 from flask_cors import CORS, cross_origin
+import csv
 
 # instantiate the app
 app = Flask(__name__)
@@ -11,10 +12,13 @@ app.config['CORS_HEADER'] = 'Content-Type'
 UPLOAD_FOLDER = 'uploads'
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
+FILE1 = []
+FILE2 = []
+
 @app.route('/')
 @cross_origin(origin='*', allow_headers=['Content-Type'])
 def index():
-    return 'Hello world'
+    return 'Server'
     
 @app.route('/uploadOne', methods = ['GET', 'POST'])
 @cross_origin(origin='*',allow_headers=['Content-Type'])

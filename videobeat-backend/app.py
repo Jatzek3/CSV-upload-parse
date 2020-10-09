@@ -12,8 +12,7 @@ app.config['CORS_HEADER'] = 'Content-Type'
 UPLOAD_FOLDER = 'uploads'
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
-FILE1 = []
-FILE2 = []
+
 
 @app.route('/')
 @cross_origin(origin='*', allow_headers=['Content-Type'])

@@ -2,6 +2,9 @@ from flask import Flask,request
 from flask_cors import CORS, cross_origin
 import csv
 
+from pars import mainflow
+
+
 # instantiate the app
 app = Flask(__name__)
 app.config.from_object(__name__)
@@ -12,8 +15,6 @@ app.config['CORS_HEADER'] = 'Content-Type'
 UPLOAD_FOLDER = 'uploads'
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
-f=""
-g=""
 @app.route('/')
 @cross_origin(origin='*', allow_headers=['Content-Type'])
 def index():
@@ -38,7 +39,7 @@ def upload_file2():
 @app.route('/compute')
 @cross_origin(allow_headers=['Content-Type'])
 def compute():
-    return {"response": f + g}
+    return mainflow()
 
 if __name__ =="__main__":
     print("server is running")

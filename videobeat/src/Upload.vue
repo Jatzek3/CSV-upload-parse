@@ -1,6 +1,6 @@
 <template>
   <form @submit.prevent="sendFile" enctype="multipart/form-data" class="form">
-    <label for="file" class="label">Upload file</label>
+    <label for="file" class="label">Upload file with ad blocks</label>
     <input type="file" ref="file" @change="selectFile" />
     <button>Send</button>
   </form>

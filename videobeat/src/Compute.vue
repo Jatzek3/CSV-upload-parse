@@ -1,6 +1,7 @@
 <template>
   <div>
     <button @click="compute">Send</button>
+    <div>{{ blocks[0] }}</div>
   </div>
 </template>
 

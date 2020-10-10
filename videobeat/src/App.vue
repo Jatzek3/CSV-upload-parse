@@ -3,18 +3,19 @@
     <header-comp />
     <upload />
     <upload-second />
+    <compute />
   </div>
 </template>
 
 <script>
-import Upload from "./Upload.vue";
-import HeaderComp from "./HeaderComp.vue";
+import Upload from "./Upload";
+import HeaderComp from "./HeaderComp";
 import UploadSecond from "./uploadSecond";
+import Compute from "./Compute";
 
-export default { 
-  
+export default {
   name: "App",
-  components: { Upload, HeaderComp, UploadSecond },
+  components: { Upload, HeaderComp, UploadSecond, Compute },
 };
 </script>
 

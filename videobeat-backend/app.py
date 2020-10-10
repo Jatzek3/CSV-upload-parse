@@ -35,6 +35,11 @@ def upload_file2():
         f.save(f.filename)
         return 'file uploaded succesfully'
 
+@app.route('/compute')
+@cross_origin(allow_headers=['Content-Type'])
+def compute():
+    return {"response": "this is a response"}
+
 if __name__ =="__main__":
     print("server is running")
     app.run()

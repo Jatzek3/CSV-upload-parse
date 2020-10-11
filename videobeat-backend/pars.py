@@ -24,23 +24,26 @@ def mainflow():
     # sorting client request by values Descending
     first_file.sort(key=lambda add: int(add['Budget']) / int(add['Duration']),reverse=True),
 
+    
+
 
     # Count the whole ammount of time in client requests and adds
     # throw out the least profitable
-    adds_time = 0
-    adblock_time = 0
-    for i in first_file:
-        adds_time += int(i['Duration'])
-    for i in second_file:
-         adblock_time += int(i['Duration'])
-    while adds_time > adblock_time:
-        adds_time = 0
-        adblock_time = 0
-        for i in first_file:
-            adds_time += int(i['Duration'])
-        for i in second_file:
-            adblock_time += int(i['Duration'])
-        first_file.pop()
+    # adds_time = 0
+    # adblock_time = 0
+    # for i in first_file:
+    #     adds_time += int(i['Duration'])
+    # for i in second_file:
+    #      adblock_time += int(i['Duration'])
+    # while adds_time > adblock_time:
+    #     adds_time = 0
+    #     adblock_time = 0
+    #     for i in first_file:
+    #         adds_time += int(i['Duration'])
+    #     for i in second_file:
+    #         adblock_time += int(i['Duration'])
+    #     first_file.pop()
+    
 
     print(adds_time)
     print(adblock_time)

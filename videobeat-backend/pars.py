@@ -4,10 +4,10 @@ def mainflow():
 
     def createDict(filename=''):
         """Create a dictionary out of a csv file
-        if other delimiter than ";" in
+        if other delimiter than "," in
         csv is used. It has to be specified in line 14 
 
-        argument: a csv filename with ';' delimiter - string """
+        argument: a csv filename with ',' delimiter - string """
         import csv
         file =[]
         with open(filename, 'r') as second_file:

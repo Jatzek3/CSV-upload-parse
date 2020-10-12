@@ -45,8 +45,6 @@ def mainflow():
     #     first_file.pop()
     
 
-    print(adds_time)
-    print(adblock_time)
 
     response ={"requests" : first_file,
             "adblocks": second_file}

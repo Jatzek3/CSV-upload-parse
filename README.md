@@ -14,6 +14,6 @@
 - "pip install flask_cors"
 - "python app.py" to run the server 
 
-Flask Vue application which takes two files csv files on input and return the data as the JSON
+Flask Vue application which takes two csv files on input and return the data as JSON Object
 
-Aplication can be usefull for any one who wants to quickly write an algorythm which computes and muteates data(in thi case CSV files, but the program can be adapted to other files), and dont want to waste time on searching information and writing IO logic themself. 
+

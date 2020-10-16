@@ -1,3 +1,6 @@
+# Simple REST app for CSV file parsing
+
+Flask Vue application which takes two csv files on input and return the data as JSON Object
 
 # Installation
 - clone/download videobeat repository
@@ -14,6 +17,6 @@
 - "pip install flask_cors"
 - "python app.py" to run the server 
 
-Flask Vue application which takes two csv files on input and return the data as JSON Object
+
 
 

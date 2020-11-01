@@ -5,12 +5,12 @@ Flask Vue application which takes two csv files on input and return the data as 
 # Installation
 - clone/download videobeat repository
 ### Frontend Part
-- Navigate to videobeat directory in main directory with "cd videobeat" (...videdeobeat-main/videobeat>)
+- Navigate to videobeat directory in main directory with "cd frontend"
 - "npm install" 
 - "npm install axios"
 - "npm run serve" to start the server
 ### Backend Part
-- Navigate to videobeat-backend directory in main directory with "cd videobeat-backend"
+- Navigate to videobeat-backend directory in main directory with "cd backend"
 - "python -m venv venv" to create virtual enviroment
 - ". venv/Scripts/activate" on Windows to activate virtual enviroment(on other OS may differ)
 - "pip install Flask"

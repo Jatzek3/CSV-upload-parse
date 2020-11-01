@@ -3,7 +3,7 @@
 Flask Vue application which takes two csv files on input and return the data as JSON Object
 
 # Installation
-- clone/download videobeat repository
+- clone/download repository
 ### Frontend Part
 - Navigate to videobeat directory in main directory with "cd frontend"
 - "npm install" 
